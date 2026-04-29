@@ -1,0 +1,11 @@
+ [package]
+name = "odjk-wifi"
+version = "0.1.0"
+edition = "2021"
+authors = ["odyajka"]
+description = "A simple Wi-Fi manager using egui and wpa_cli"
+
+[dependencies]
+eframe = "0.27.0"
+egui_extras = "0.27.0"
+once_cell = "1.19.0" 
