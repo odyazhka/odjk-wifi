@@ -1,0 +1,17 @@
+[package]
+name = "odjk-wifi"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+eframe = "0.27.0"
+egui_extras = "0.27.0"
+once_cell = "1.19.0" 
+mimalloc = { version = "0.1", default-features = false }
+
+[profile.release]
+opt-level = "z"
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = true
